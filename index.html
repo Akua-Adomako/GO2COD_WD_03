@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" class="display" id="display" disabled readonly>
+
+        <div id="keys">
+
+
+          <button type="button" class="btn memory" id="memory-clear">MC</button>
+          <button type="button" class="btn memory" id="memory-recall">MR</button>
+          <button type="button" class="btn memory" id="memory-add">M+</button>
+          <button type="button" class="btn memory" id="memory-subtract">M-</button>
+
+
+          <button type="button" class="btn" onclick="appendToDisplay('7')">7</button>
+          <button type="button" class="btn" onclick="appendToDisplay('8')">8</button>
+          <button type="button" class="btn" onclick="appendToDisplay('9')">9</button>
+          <button type="button" class="btn operator" onclick="appendToDisplay('/')">/</button>
+
+
+          <button type="button" class="btn" onclick="appendToDisplay('4')">4</button>
+          <button type="button" class="btn" onclick="appendToDisplay('5')">5</button>
+          <button type="button" class="btn" onclick="appendToDisplay('6')">6</button>
+          <button type="button" class="btn operator" onclick="appendToDisplay('*')">*</button>
+
+
+          <button type="button" class="btn" onclick="appendToDisplay('1')">1</button>
+          <button type="button" class="btn" onclick="appendToDisplay('2')">2</button>
+          <button type="button" class="btn" onclick="appendToDisplay('3')">3</button>
+          <button type="button" class="btn operator" onclick="appendToDisplay('-')">-</button>
+
+
+          <button type="button" class="btn" onclick="appendToDisplay('0')">0</button>
+          <button type="button" class="btn" id="dp" onclick="appendToDisplay('.')">.</button>
+          <button type="button" class="btn" id="mod" onclick="appendToDisplay('%')">%</button>
+          <button type="button" class="btn operator" onclick="appendToDisplay('+')">+</button>
+
+
+          <button type="button" class="btn btm" id="clear" onclick="clearDisplay()">C</button>
+          <button type="button" class="btn btm" id="delete" onclick="deleteDisplay()">Del</button>
+          <button type="button" class="btn btm" id="equals" onclick="calculate()">=</button>  
+             
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
